@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LootChase
 
 Welcome to **LootChase** — The #1 Nigerian Digital Marketplace for **Clothing, Gadgets, Digital Products, and Hustlers Tools** 💀🚨.
@@ -83,6 +84,3 @@ Titan Rank: [Street | Hacker | Hustler]
 
 ## License
 DO NOT COPY WE ARE CERTIFIED
-
----
-
