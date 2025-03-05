@@ -1,0 +1,99 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background Styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0D1117;
+    /* Dark gaming UI */
+}
+
+/* Form Box */
+.signup-box {
+    background: #161B22;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.3);
+    width: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+/* Form Heading */
+h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffaa;
+    text-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+}
+
+/* Input Groups */
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffffb3;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #0D1117;
+    border: 2px solid #00ffaa;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+/* Submit Button */
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00ffaa, #00ccff);
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.signup-button:hover {
+    background: linear-gradient(90deg, #00ccff, #ff00ff);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transform: scale(1.05);
+}

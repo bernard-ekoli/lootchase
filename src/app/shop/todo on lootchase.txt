@@ -1,0 +1,1 @@
+handle the errors in verify.js

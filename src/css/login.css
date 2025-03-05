@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0D1117;
+    /* Dark gaming UI */
+}
+
+.login-box {
+    background: #161B22;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.3);
+    width: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffaa;
+    text-shadow: 0 0 10px rgba(0, 255, 170, 0.8);
+}
+
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffffb3;
+}
+
+.input-group div {
+    display: flex;
+    align-items: center;
+}
+
+.input-group div button {
+    padding: 12px;
+    margin-top: 5px;
+    background: #0D1117;
+    border: 2px solid #00ffaa;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 46px;
+}
+
+.input-group div button div {
+    width: 100%;
+    overflow: hidden;
+}
+
+.input-group div button div img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: #0D1117;
+    border: 2px solid #00ffaa;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s;
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    height: 46px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.show-password {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #ffffffb3;
+    margin-top: 10px;
+}
+
+.show-password input {
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #00ffaa, #00ccff);
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-button:hover {
+    background: linear-gradient(90deg, #00ccff, #ff00ff);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Spinner Container */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Spinner Animation */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 255, 170, 0.3);
+    border-top-color: #00ffaa;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+/* Spinner Animation Keyframes */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
