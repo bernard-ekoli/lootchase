@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    output: "export",
+    trailingSlash: true, // This one go make Vercel understand your routing
+};
 
-export default nextConfig;
+module.exports = nextConfig;
