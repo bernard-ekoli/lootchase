@@ -11,7 +11,7 @@ const SearchBar = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState([]);
   const ClonedPhones = [...cloneIphones]
-  const [cart, setCart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
+  const [cart, setCart] = useState([]);
   const [closeIndividual, setCloseIndividual] = useState("");
   const [displayItem, setDisplayItem] = useState("")
   const [activeImg, setActiveImg] = useState(0)
@@ -31,8 +31,15 @@ const SearchBar = () => {
       products.scrollBy({ left: 200, behavior: "smooth" });
     });
     console.log(cart)
-  }, [cart])
-
+  }, [])
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const storedCart = localStorage.getItem("cart");
+      if (storedCart) {
+        setCart(JSON.parse(storedCart));
+      }
+    }
+  }, []); // Empty dependency array to make sure it runs only once
   function showSpinner() {
     setShowCartBut(false)
     setSpinner(true)
